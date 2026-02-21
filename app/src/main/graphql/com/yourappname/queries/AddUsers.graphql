@@ -1,0 +1,8 @@
+mutation Insert_users($objects: [users_insert_input!]!) {
+    insert_users(objects: $objects) {
+        returning {
+            name
+            id
+        }
+    }
+}
